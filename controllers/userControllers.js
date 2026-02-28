@@ -1,6 +1,6 @@
 const User = require('../models/User');
 
-// Get logged-in user profile
+// loggedin user profile
 const getUserProfile = async (req, res) => {
   const user = await User.findById(req.user._id);
 
